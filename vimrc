@@ -20,3 +20,6 @@ set scrolloff=2
 " makes LaTeX use spell checking, word wrapping
 autocmd FileType tex set wrap spell
 autocmd FileType make set noexpandtab
+
+set term=xterm
+

@@ -12,7 +12,6 @@ function prompt {
     TITLEBAR='\[\033]0;\u@\h:\w\007\]'
     FAILURE_COLOR="if [[ \$? = '0' ]]; then echo \"$GREEN\"; else echo \"$RED\"; fi"
 
-    #PS1="$BLUE\u@\h $RED[\t]>$NO_COLOR "
     PS1="$BLUE[\t] \`$FAILURE_COLOR\` \u@\h> $NO_COLOR"
 }
 

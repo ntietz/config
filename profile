@@ -1,7 +1,7 @@
 
 # PS1="\[\e]0;\@ [\u@\h] [\w]\007\]\[\e[1;33m\]\@ \[\e[1;37m\][\[\e[1;35m\]\u\[\e[1;37m\]@\[\e[1;32m\]\h\[\e[1;37m\]] \[\e[1;37m\][\[\e[1;31m\]\w\[\e[1;37m\]] [\[\e[1;36m\]$(ls -l | grep "^-" | wc -l | tr -d " ") \[\e[1;34m\]files\[\e[1;37m\]] \n\[\e[1;33m\]\@ \[\e[1;37m\]$ \[\e[0m\]"
 
-function prompt {
+function set_prompt {
     local BLUE="\[\e[0;34m\]"
     local DARK_BLUE="\[\e[1;34m\]"
     local RED="\[\e[0;31m\]"
@@ -23,5 +23,5 @@ function prompt {
     PS1="${TITLEBAR}$BLUE[\t]\`$FAILURE_COLOR\` \u@\h> $NO_COLOR"
 }
 
-prompt
+set_prompt
 

@@ -20,7 +20,7 @@ function prompt {
 
     FAILURE_COLOR="if [[ \$? = '0' ]]; then echo \"$GREEN\"; else echo \"$RED\"; fi"
 
-    PS1="${TITLEBAR}$BLUE[\t] \`$FAILURE_COLOR\` \u@\h> $NO_COLOR"
+    PS1="${TITLEBAR}$BLUE[\t]\`$FAILURE_COLOR\` \u@\h> $NO_COLOR"
 }
 
 prompt

@@ -30,7 +30,7 @@ set_prompt
 alias ls="ls --color=auto"
 
 # something with keyword completion
-. /etc/bash_completion
+# . /etc/bash_completion
 
 # default editor
 export EDITOR=vim

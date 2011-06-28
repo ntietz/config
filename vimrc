@@ -10,6 +10,10 @@ set winminwidth=20
 set winwidth=100
 set winheight=20
 
+" Syntax highlighting
+syntax on
+
+" Wrapping settings
 set nowrap " nowrap makes the lines not wrap
 " set wrap " wrap makes the lines wrap
 set linebreak

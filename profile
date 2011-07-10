@@ -29,9 +29,6 @@ set_prompt
 # makes ls print pretty
 alias ls="ls --color=auto"
 
-# something with keyword completion
-# . /etc/bash_completion
-
 # default editor
 export EDITOR=vim
 

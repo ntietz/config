@@ -25,14 +25,11 @@ set_prompt() {
     PS1="${TITLEBAR}$BLUE[\t]\`$FAILURE_COLOR\` \u@\h> $NO_COLOR"
 }
 
-#sets the PS1 prompt
+# sets the PS1 prompt
 set_prompt
 
 # makes ls print pretty
 alias ls="ls --color=auto"
-
-# something with keyword completion
-# . /etc/bash_completion
 
 # default editor
 export EDITOR=vim
@@ -41,4 +38,7 @@ export EDITOR=vim
 export HISTSIZE=1000
 export HISTFILESIZE=1000
 export HISTCONTROL=ignoredups
+
+# disable messaging
+mesg n
 

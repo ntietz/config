@@ -7,7 +7,7 @@ rm -f .bashrc
 ln -s ~/Repositories/config/profile .profile
 ln -s ~/Repositories/config/bashrc .bashrc
 
-rm -f .screenrf
+rm -f .screenrc
 ln -s ~/Repositories/config/screenrc .screenrc
 
 rm -f .vimrc

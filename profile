@@ -42,3 +42,6 @@ export HISTCONTROL=ignoredups
 # disable messaging
 mesg n
 
+# add the rubygem location
+export PATH=$PATH:/var/lib/gems/1.8/bin/ 
+

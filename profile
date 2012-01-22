@@ -42,3 +42,7 @@ export HISTCONTROL=ignoredups
 # disable messaging
 mesg n
 
+# set the path for Hadoop
+export HADOOP_HOME=~/hadoop/hadoop-0.20.2/
+export PATH=$PATH:$HADOOP_HOME/bin
+

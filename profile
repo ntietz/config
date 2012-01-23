@@ -42,12 +42,10 @@ export HISTCONTROL=ignoredups
 # disable messaging
 mesg n
 
-<<<<<<< HEAD
 # set the path for Hadoop
 export HADOOP_HOME=~/hadoop/hadoop-0.20.2/
 export PATH=$PATH:$HADOOP_HOME/bin
-=======
+
 # add the rubygem location
 export PATH=$PATH:/var/lib/gems/1.8/bin/ 
->>>>>>> 6fd6398cec6e7bef7c00bef10fdc4ee45a615301
 

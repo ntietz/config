@@ -49,3 +49,8 @@ export PATH=$PATH:$HADOOP_HOME/bin
 # add the rubygem location
 export PATH=$PATH:/var/lib/gems/1.8/bin/ 
 
+alias sshneptune="ssh ntietz@neptune.cs.kent.edu"
+alias sshposeidon="ssh ntietz@poseidon.cs.kent.edu"
+alias sshntietz="ssh nicholas@ntietz.com"
+alias sshacm="ssh ntietz@acm.cs.kent.edu"
+

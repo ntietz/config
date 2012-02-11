@@ -108,6 +108,6 @@ defnonblock 5
 # screen -t monkey ssh monkey
 # screen -t mail 8 mutt
 # screen -t daemon 9 tail -f /var/log/daemon.log
-screen -t top 0 htop
-screen -t bash 1
+# screen -t top 0 htop
+screen -t bash 0
 

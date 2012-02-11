@@ -62,11 +62,14 @@ bind } history
 termcapinfo vt100 dl=5\E[M
 
 # turn sending of screen messages to hardstatus off
-hardstatus off
+hardstatus alwayslastline
+hardstatus string '%{= kg}[ %{g}%H ][ %{b}%-w%{g}%n %t%{b}%+w %{g} %=][%{b} %D %d/%m %c:%s %{g}]'
+#information on escapes: http://aperiodic.net/screen/man:string_escapes
+
 # Set the hardstatus prop on gui terms to set the titlebar/icon title
 termcapinfo xterm*|rxvt*|kterm*|Eterm* hs:ts=\E]0;:fs=\007:ds=\E]0;\007
 # use this for the hard status string
-hardstatus string "%h%? users: %u%?"
+#hardstatus string "%h%? users: %u%?"
 
 # An alternative hardstatus to display a bar at the bottom listing the
 # windownames and highlighting the current windowname in blue. (This is only

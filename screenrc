@@ -63,7 +63,7 @@ termcapinfo vt100 dl=5\E[M
 
 # turn sending of screen messages to hardstatus off
 hardstatus alwayslastline
-hardstatus string '%{= kg}[ %{g}%H ][ %{b}%-w%{g}%n %t%{b}%+w %{g} %=][%{b} %D %d/%m %c:%s %{g}]'
+hardstatus string '%{= kb}[ %{b}%H %{b}][ %{b}%-w%{g}%n %t%{b}%+w %{b} %=][%{b} %D %d/%m %c:%s %{b}]'
 #information on escapes: http://aperiodic.net/screen/man:string_escapes
 
 # Set the hardstatus prop on gui terms to set the titlebar/icon title

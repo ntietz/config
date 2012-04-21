@@ -27,3 +27,5 @@ autocmd FileType make set noexpandtab
 
 set term=xterm
 
+let java_allow_cpp_keywords = 1
+

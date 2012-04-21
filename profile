@@ -40,11 +40,14 @@ export HISTFILESIZE=1000
 export HISTCONTROL=ignoredups
 
 # disable messaging
-mesg n
+if `tty -s`; then
+    mesg n
+fi
 
 # set the path for Hadoop
-export HADOOP_HOME=~/hadoop/hadoop-0.20.2/
-export PATH=$PATH:$HADOOP_HOME/bin
+export HADOOP=~/hadoop
+export PATH=$PATH:$HADOOP/bin
+export JAVA_HOME=/usr
 
 # add the rubygem location
 export PATH=$PATH:/var/lib/gems/1.8/bin/ 

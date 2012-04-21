@@ -45,7 +45,8 @@ if `tty -s`; then
 fi
 
 # set the path for Hadoop
-export HADOOP=~/hadoop
+export HADOOP_VERSION=hadoop-1.0.1
+export HADOOP=~/hadoop/$HADOOP_VERSION
 export PATH=$PATH:$HADOOP/bin
 export JAVA_HOME=/usr
 

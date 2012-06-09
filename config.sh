@@ -14,6 +14,8 @@ rm -f .vimrc
 ln -s ~/Repositories/config/vimrc .vimrc
 
 # set up the default branch for git
-git config --global branch.master.remote origin
+git config --global branch.master.remote github
 git config --global branch.master.merge refs/heads/master
+
+mkdir -p .vim
 

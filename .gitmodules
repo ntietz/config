@@ -1,3 +1,1 @@
-[submodule "vim/javacomplete"]
-	path = vim/javacomplete
-	url = git://github.com/ntietz/javacomplete.git
+

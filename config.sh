@@ -17,5 +17,6 @@ ln -s ~/Repositories/config/vimrc .vimrc
 git config --global branch.master.remote github
 git config --global branch.master.merge refs/heads/master
 
-mkdir -p .vim
+rm -rf .vim
+ln -s ~/Repositories/config/vim .vim
 

@@ -29,7 +29,8 @@ set_prompt() {
 set_prompt
 
 # makes ls print pretty
-alias ls="ls --color=auto"
+#alias ls="ls --color=auto"
+alias ls="ls -G"
 
 # default editor
 export EDITOR=vim

@@ -59,3 +59,15 @@ alias sshposeidon="ssh ntietz@poseidon.cs.kent.edu"
 alias sshntietz="ssh nicholas@ntietz.com"
 alias sshacm="ssh ntietz@acm.cs.kent.edu"
 
+
+##
+# Your previous /Users/nicholas/.profile file was backed up as /Users/nicholas/.profile.macports-saved_2012-06-19_at_15:40:04
+##
+
+# MacPorts Installer addition on 2012-06-19_at_15:40:04: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/
+
+export PATH=~/.rbenv/bin:~/.rbenv/shims:$PATH
+

@@ -29,8 +29,12 @@ set_prompt() {
 set_prompt
 
 # makes ls print pretty
-#alias ls="ls --color=auto"
-alias ls="ls -G"
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+    alias ls="ls --color=auto"
+elif [[ "$unamestr" == 'Darwin' ]]; then
+    alias ls="ls -G"
+fi
 
 # default editor
 export EDITOR=vim

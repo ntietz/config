@@ -56,14 +56,8 @@ fi
 export JAVA_HOME=/usr
 
 # add the rubygem location
-export PATH=$PATH:/var/lib/gems/1.8/bin/ 
-
-alias sshneptune="ssh ntietz@neptune.cs.kent.edu"
-alias sshposeidon="ssh ntietz@poseidon.cs.kent.edu"
-alias sshntietz="ssh nicholas@ntietz.com"
-alias sshacm="ssh ntietz@acm.cs.kent.edu"
-
-
+#export PATH=$PATH:/var/lib/gems/1.8/bin/ 
+#export PATH=~/.rbenv/bin:~/.rbenv/shims:$PATH
 ##
 # Your previous /Users/nicholas/.profile file was backed up as /Users/nicholas/.profile.macports-saved_2012-06-19_at_15:40:04
 ##
@@ -73,5 +67,20 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/
 
-export PATH=~/.rbenv/bin:~/.rbenv/shims:$PATH
+#### ALIAS SECTION
+
+# servers
+alias sshneptune="ssh ntietz@neptune.cs.kent.edu"
+alias sshposeidon="ssh ntietz@poseidon.cs.kent.edu"
+alias sshntietz="ssh nicholas@ntietz.com"
+alias sshacm="ssh ntietz@acm.cs.kent.edu"
+
+# commands
+alias cls='clear && ls'
+alias doit='sudo $(history -p !-1)'
+alias .='echo $PWD'
+alias ..='cd ..'
+alias ~='cd ~'
+alias d="pushd"
+alias u="popd"
 

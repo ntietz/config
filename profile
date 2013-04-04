@@ -34,6 +34,7 @@ if [[ "$unamestr" == 'Linux' ]]; then
     alias ls="ls --color=auto"
 elif [[ "$unamestr" == 'Darwin' ]]; then
     alias ls="ls -G"
+    alias pdf="open -a Preview"
 fi
 
 # default editor
@@ -81,6 +82,6 @@ alias doit='sudo $(history -p !-1)'
 alias .='echo $PWD'
 alias ..='cd ..'
 alias ~='cd ~'
-alias d="pushd"
-alias u="popd"
+alias f="pushd"
+alias b="popd"
 

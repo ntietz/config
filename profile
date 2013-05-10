@@ -85,3 +85,7 @@ alias ~='cd ~'
 alias f="pushd"
 alias b="popd"
 
+macos_magic_fix() {
+    killall Dock
+}
+

@@ -24,6 +24,7 @@ set scrolloff=2
 " makes LaTeX use spell checking, word wrapping
 autocmd FileType tex set wrap spell
 autocmd FileType make set noexpandtab
+autocmd FileType *gitconfig set noexpandtab
 
 set term=xterm
 

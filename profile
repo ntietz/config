@@ -85,7 +85,17 @@ alias ~='cd ~'
 alias f="pushd"
 alias b="popd"
 
+# go commands for work
+alias g_w="cd ~/Repositories/work/gdbms"
+alias g_ar="cd ~/Repositories/work/gdbms/src/graphsql/server/analyticsrun"
+alias g_gl="cd ~/Repositories/work/gdbms/src/graphsql/server/gpelib"
+alias g_gr="cd ~/Repositories/work/gdbms/src/graphsql/server/gperun"
+
 macos_magic_fix() {
     killall Dock
 }
+
+export PATH=$PATH:~/.bin
+
+ulimit -n 65535
 

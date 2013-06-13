@@ -34,7 +34,6 @@ if [[ "$unamestr" == 'Linux' ]]; then
     alias ls="ls --color=auto"
 elif [[ "$unamestr" == 'Darwin' ]]; then
     alias ls="ls -G"
-    alias pdf="open -a Preview"
 fi
 
 # default editor
@@ -79,17 +78,8 @@ alias sshacm="ssh ntietz@acm.cs.kent.edu"
 # commands
 alias cls='clear && ls'
 alias doit='sudo $(history -p !-1)'
-alias .='echo $PWD'
-alias ..='cd ..'
-alias ~='cd ~'
 alias f="pushd"
 alias b="popd"
-
-# go commands for work
-alias g_w="cd ~/Repositories/work/gdbms"
-alias g_ar="cd ~/Repositories/work/gdbms/src/graphsql/server/analyticsrun"
-alias g_gl="cd ~/Repositories/work/gdbms/src/graphsql/server/gpelib"
-alias g_gr="cd ~/Repositories/work/gdbms/src/graphsql/server/gperun"
 
 macos_magic_fix() {
     killall Dock

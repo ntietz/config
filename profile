@@ -87,5 +87,5 @@ macos_magic_fix() {
 
 export PATH=$PATH:~/.bin
 
-ulimit -n 65535
+#ulimit -n 65535
 

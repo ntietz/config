@@ -89,6 +89,5 @@ macos_magic_fix() {
 
 export PATH=$PATH:~/.bin
 
-ulimit -n 65535
 export HISTCONTROL=ignorespace
 

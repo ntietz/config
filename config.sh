@@ -17,6 +17,6 @@ ln -s ~/Repositories/config/vimrc .vimrc
 git config --global branch.master.remote origin
 git config --global branch.master.merge refs/heads/master
 
-rm -rf .vim
-ln -s ~/Repositories/config/vim .vim
+mkdir -f ~/.vim
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 

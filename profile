@@ -65,7 +65,8 @@ export JAVA_HOME=/usr
 # MacPorts Installer addition on 2012-06-19_at_15:40:04: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
-export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/
+#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/
+export JAVA_HOME="$(/usr/libexec/java_home)"
 
 #### ALIAS SECTION
 
@@ -80,6 +81,7 @@ alias cls='clear && ls'
 alias doit='sudo $(history -p !-1)'
 alias f="pushd"
 alias b="popd"
+alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql -p5432"
 
 macos_magic_fix() {
     killall Dock
@@ -88,4 +90,5 @@ macos_magic_fix() {
 export PATH=$PATH:~/.bin
 
 ulimit -n 65535
+export HISTCONTROL=ignorespace
 

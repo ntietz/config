@@ -11,7 +11,7 @@ Plugin 'gmarik/Vundle.vim'
 " Plugin 'scala.vim'
 " Plugin 'vim-scala'
 Bundle 'derekwyatt/vim-scala'
-Plugin 'git@github.com:Valloric/YouCompleteMe.git'
+" Plugin 'git@github.com:Valloric/YouCompleteMe.git'
 
 call vundle#end()
 
@@ -52,4 +52,5 @@ let java_allow_cpp_keywords = 1
 set ruler
 set number
 set backspace=indent,eol,start
+set hlsearch
 

@@ -42,7 +42,9 @@ export EDITOR=vim
 # set history
 export HISTSIZE=1000
 export HISTFILESIZE=1000
-export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoredups,erasedups
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+shopt -s histappend
 
 # disable messaging
 if `tty -s`; then
@@ -82,7 +84,7 @@ alias cls='clear && ls'
 alias doit='sudo $(history -p !-1)'
 alias f="pushd"
 alias b="popd"
-alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql -p5432"
+alias href="history -a; history -c; history -r"
 
 macos_magic_fix() {
     killall Dock

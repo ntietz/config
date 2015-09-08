@@ -69,7 +69,7 @@ export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/
 #export JAVA_HOME="$(/usr/libexec/java_home)"
-export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+#export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 
 #### ALIAS SECTION
 

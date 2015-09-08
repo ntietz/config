@@ -36,6 +36,10 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
     alias ls="ls -G"
 fi
 
+if [[ "$unamestr" == 'Darwin' ]]; then
+  alias update_terminal_cwd=:
+fi
+
 # default editor
 export EDITOR=vim
 

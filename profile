@@ -87,7 +87,7 @@ macos_magic_fix() {
     killall Dock
 }
 
-export PATH=$PATH:~/.bin
+export PATH=$PATH:~/.bin:/Developer/NVIDIA/CUDA-7.0/bin/
 
 export HISTCONTROL=ignorespace
 

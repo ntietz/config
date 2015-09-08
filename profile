@@ -42,7 +42,9 @@ export EDITOR=vim
 # set history
 export HISTSIZE=1000
 export HISTFILESIZE=1000
-export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoredups,erasedups
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+shopt -s histappend
 
 # disable messaging
 if `tty -s`; then
@@ -66,7 +68,8 @@ export JAVA_HOME=/usr
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 #export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/
-export JAVA_HOME="$(/usr/libexec/java_home)"
+#export JAVA_HOME="$(/usr/libexec/java_home)"
+export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
 
 #### ALIAS SECTION
 
@@ -81,7 +84,7 @@ alias cls='clear && ls'
 alias doit='sudo $(history -p !-1)'
 alias f="pushd"
 alias b="popd"
-alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql -p5432"
+alias href="history -a; history -c; history -r"
 
 macos_magic_fix() {
     killall Dock

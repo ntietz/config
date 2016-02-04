@@ -99,3 +99,5 @@ export PATH=$PATH:~/.bin:/Developer/NVIDIA/CUDA-7.0/bin/
 
 export HISTCONTROL=ignorespace
 
+export TERM=xterm-color
+

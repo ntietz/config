@@ -43,6 +43,18 @@ set number
 set backspace=indent,eol,start
 set hlsearch
 
+set splitright
+set splitbelow
+
+map <C-n> :NERDTreeToggle<CR>
+
+let g:airline#extensions#tabline#enabled = 1
+
+set laststatus=2
+"
 "" I think this is some command for OS X compatibility? I don't know. Leaving
 "" it here so that I can find it later if I need it.
-"set term=xterm
+"set term=xterm-color
+
+colorscheme 256-grayvim
+"colorscheme gentooish

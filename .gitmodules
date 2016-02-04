@@ -8,5 +8,11 @@
 	path = bundle/airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "bundle/vim-colorschemes"]
-	path = bundle/vim-colorschemes
+	path = bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = https://github.com/derekwyatt/vim-scala
+[submodule "bundle/syntastic"]
+	path = bundle/syntastic
+	url = https://github.com/scrooloose/syntastic

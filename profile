@@ -82,7 +82,8 @@ alias cls='clear && ls'
 alias doit='sudo $(history -p !-1)'
 alias f="pushd"
 alias b="popd"
-alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql -p5432"
+alias screen_pwd='screen -X eval "chdir $PWD"'
+#alias psql="'/Applications/Postgres.app/Contents/Versions/9.3/bin'/psql -p5432"
 
 macos_magic_fix() {
     killall Dock

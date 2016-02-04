@@ -1,28 +1,36 @@
-set nocompatible
-filetype off
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-
-" Plugin 'scala.vim'
-" Plugin 'vim-scala'
-Bundle 'derekwyatt/vim-scala'
-" Plugin 'git@github.com:Valloric/YouCompleteMe.git'
-
-call vundle#end()
-
+"set nocompatible
+"filetype off
+"
+"" set the runtime path to include Vundle and initialize
+"set rtp+=~/.vim/bundle/Vundle.vim
+"call vundle#begin()
+"
+"" let Vundle manage Vundle, required
+"Plugin 'gmarik/Vundle.vim'
+"
+"" Plugin 'scala.vim'
+"" Plugin 'vim-scala'
+"Bundle 'derekwyatt/vim-scala'
+"" Plugin 'git@github.com:Valloric/YouCompleteMe.git'
+"
+"call vundle#end()
+"
+"filetype plugin indent on
 filetype plugin indent on
 
 " Tabbing
-set tabstop=2
-set shiftwidth=2
-set expandtab
-set autoindent
-set smartindent
+function! SetupTabbing()
+  set tabstop=2
+  set expandtab
+  set shiftwidth=2
+  set softtabstop=2
+  set sw=2
+  set autoindent
+  set smartindent
+  set smarttab
+endfunction
+command! -bar SetupTabbing call SetupTabbing()
+SetupTabbing
 
 " Window settings
 set winminwidth=20
@@ -44,6 +52,7 @@ set scrolloff=2
 autocmd FileType tex set wrap spell
 autocmd FileType make set noexpandtab
 autocmd FileType *gitconfig set noexpandtab
+autocmd FileType python SetupTabbing
 
 " set term=xterm
 

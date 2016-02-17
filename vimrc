@@ -48,9 +48,14 @@ set splitbelow
 
 map <C-n> :NERDTreeToggle<CR>
 
+
+" Enable airline by default
+set laststatus=2
 let g:airline#extensions#tabline#enabled = 1
 
-set laststatus=2
+" Ignore *.pyc files.
+let NERDTreeIgnore = ['\.pyc$']
+
 "
 "" I think this is some command for OS X compatibility? I don't know. Leaving
 "" it here so that I can find it later if I need it.

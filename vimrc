@@ -55,6 +55,7 @@ set laststatus=2
 "" I think this is some command for OS X compatibility? I don't know. Leaving
 "" it here so that I can find it later if I need it.
 "set term=xterm-color
+set t_Co=256
 
 colorscheme 256-grayvim
 "colorscheme gentooish

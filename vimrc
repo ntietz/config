@@ -67,3 +67,5 @@ colorscheme 256-grayvim
 
 let mapleader = "/"
 set pastetoggle=<Leader>p
+map <Leader>w :set wrap<CR>
+map <Leader>e :set nowrap<CR>

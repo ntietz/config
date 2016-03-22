@@ -64,3 +64,6 @@ set t_Co=256
 
 colorscheme 256-grayvim
 "colorscheme gentooish
+
+let mapleader = "/"
+set pastetoggle=<Leader>p

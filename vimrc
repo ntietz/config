@@ -65,7 +65,7 @@ set t_Co=256
 colorscheme 256-grayvim
 "colorscheme gentooish
 
-let mapleader = "'"
-set pastetoggle=<Leader>p
-map <Leader>w :set wrap<CR>
-map <Leader>e :set nowrap<CR>
+"let mapleader = "'"
+"set pastetoggle=<Leader>p
+"map <Leader>w :set wrap<CR>
+"map <Leader>e :set nowrap<CR>

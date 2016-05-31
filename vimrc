@@ -40,6 +40,7 @@ let java_allow_cpp_keywords=1
 
 set ruler
 set number
+set relativenumber
 set backspace=indent,eol,start
 set hlsearch
 

@@ -72,6 +72,3 @@ colorscheme 256-grayvim
 "map <Leader>w :set wrap<CR>
 "map <Leader>e :set nowrap<CR>
 
-set number
-set relativenumber
-

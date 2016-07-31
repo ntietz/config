@@ -35,6 +35,7 @@ SetupTabbing
 autocmd FileType tex set wrap spell
 autocmd FileType make set noexpandtab
 autocmd FileType python SetupTabbing
+autocmd FileType markdown set wrap spell
 
 let java_allow_cpp_keywords=1
 
@@ -69,3 +70,7 @@ colorscheme 256-grayvim
 "set pastetoggle=<Leader>p
 "map <Leader>w :set wrap<CR>
 "map <Leader>e :set nowrap<CR>
+
+set number
+set relativenumber
+

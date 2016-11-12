@@ -29,16 +29,7 @@ set_prompt() {
 set_prompt
 
 # makes ls print pretty
-unamestr=`uname`
-if [[ "$unamestr" == 'Linux' ]]; then
-    alias ls="ls --color=auto"
-elif [[ "$unamestr" == 'Darwin' ]]; then
-    alias ls="ls -G"
-fi
-
-if [[ "$unamestr" == 'Darwin' ]]; then
-  alias update_terminal_cwd=:
-fi
+alias ls="ls --color=auto"
 
 # default editor
 export EDITOR=vim
@@ -55,49 +46,9 @@ if `tty -s`; then
     mesg n
 fi
 
-# set the path for Hadoop
-# export HADOOP_VERSION=hadoop-1.0.1
-# export HADOOP=~/hadoop/$HADOOP_VERSION
-# export PATH=$PATH:$HADOOP/bin
-export JAVA_HOME=/usr
-
-# add the rubygem location
-#export PATH=$PATH:/var/lib/gems/1.8/bin/ 
-#export PATH=~/.rbenv/bin:~/.rbenv/shims:$PATH
-##
-# Your previous /Users/nicholas/.profile file was backed up as /Users/nicholas/.profile.macports-saved_2012-06-19_at_15:40:04
-##
-
-# MacPorts Installer addition on 2012-06-19_at_15:40:04: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-#export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/CurrentJDK/Home/
-#export JAVA_HOME="$(/usr/libexec/java_home)"
-#export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
-
-#### ALIAS SECTION
-
-# servers
-alias sshneptune="ssh ntietz@neptune.cs.kent.edu"
-alias sshposeidon="ssh ntietz@poseidon.cs.kent.edu"
-alias sshntietz="ssh nicholas@ntietz.com"
-alias sshacm="ssh ntietz@acm.cs.kent.edu"
-
-# commands
-alias cls='clear && ls'
-alias doit='sudo $(history -p !-1)'
-alias f="pushd"
-alias b="popd"
-alias screen_pwd='screen -X eval "chdir $PWD"'
 alias href="history -a; history -c; history -r"
 
-macos_magic_fix() {
-    killall Dock
-}
-
-export PATH=$PATH:~/.bin:/Developer/NVIDIA/CUDA-7.0/bin/
-
+export PATH=$PATH:~/.bin
 export HISTCONTROL=ignorespace
-
 export TERM=xterm-256color
 

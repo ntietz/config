@@ -25,6 +25,10 @@ set_prompt() {
     PS1="${TITLEBAR}$BLUE[\t]\`$FAILURE_COLOR\` \u@\h> $NO_COLOR"
 }
 
+restart_network_manager() {
+  sudo service network-manager restart
+}
+
 # sets the PS1 prompt
 set_prompt
 

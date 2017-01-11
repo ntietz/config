@@ -72,3 +72,5 @@ colorscheme 256-grayvim
 "map <Leader>w :set wrap<CR>
 "map <Leader>e :set nowrap<CR>
 
+let g:vimwiki_list = [ {'path': '~/vimwiki'}, {'path': '~/Code/vimwiki-client-notes'} ]
+

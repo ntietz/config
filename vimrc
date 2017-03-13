@@ -74,3 +74,6 @@ colorscheme 256-grayvim
 
 let g:vimwiki_list = [ {'path': '~/vimwiki'}, {'path': '~/Code/vimwiki-client-notes'} ]
 
+" fixes webpack file watchers
+set backupcopy=yes
+

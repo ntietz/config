@@ -59,7 +59,7 @@ fi
 # export HADOOP_VERSION=hadoop-1.0.1
 # export HADOOP=~/hadoop/$HADOOP_VERSION
 # export PATH=$PATH:$HADOOP/bin
-export JAVA_HOME=/usr
+#export JAVA_HOME=/usr
 
 # add the rubygem location
 #export PATH=$PATH:/var/lib/gems/1.8/bin/ 
@@ -95,9 +95,11 @@ macos_magic_fix() {
     killall Dock
 }
 
-export PATH=$PATH:~/.bin:/Developer/NVIDIA/CUDA-7.0/bin/
+export PATH=$PATH:~/.bin
 
 export HISTCONTROL=ignorespace
 
 export TERM=xterm-256color
+
+export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 

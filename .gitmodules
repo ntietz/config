@@ -15,4 +15,7 @@
 	url = https://github.com/derekwyatt/vim-scala
 [submodule "bundle/vimwiki"]
 	path = bundle/vimwiki
-	url = https://github.com/vimwiki/vimwiki.git
+  url = https://github.com/vimwiki/vimwiki.git
+[submodule "bundle/vim-graphql"]
+	path = bundle/vim-graphql
+	url = https://github.com/jparise/vim-graphql

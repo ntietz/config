@@ -77,3 +77,13 @@ let g:vimwiki_list = [ {'path': '~/vimwiki'}, {'path': '~/Code/vimwiki-client-no
 " fixes webpack file watchers
 set backupcopy=yes
 
+" put swap files out of the current directory
+set dir=$HOME/.vim/tmp/swap
+if !isdirectory(&dir) | call mkdir(&dir, 'p', 0700) | endif
+
+set autoread
+set updatetime=100
+au FileChangedShell * checktime
+au CursorHold * checktime
+au CursorHoldI * checktime
+

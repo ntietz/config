@@ -1,14 +1,10 @@
 #!/bin/bash
 
-cd ~
+stow -t ~ bash
+stow -t ~ screen
 
-rm -f .profile
-rm -f .bashrc
-ln -s ~/Code/config/profile .profile
-ln -s ~/Code/config/bashrc .bashrc
-
-rm -f .screenrc
-ln -s ~/Code/config/screenrc .screenrc
+#rm -f .screenrc
+#ln -s ~/Code/config/screenrc .screenrc
 
 #rm -f .vimrc
 #ln -s ~/Code/config/vimrc .vimrc

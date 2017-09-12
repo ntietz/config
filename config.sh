@@ -2,6 +2,7 @@
 
 stow -t ~ bash
 stow -t ~ screen
+stow -t ~ vim
 
 #rm -f .screenrc
 #ln -s ~/Code/config/screenrc .screenrc

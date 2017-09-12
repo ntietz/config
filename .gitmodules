@@ -1,27 +1,27 @@
 [submodule "bundle/fugitive"]
-	path = bundle/fugitive
+	path = vim/bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive.git
 [submodule "bundle/nerdtree"]
-	path = bundle/nerdtree
+	path = vim/bundle/nerdtree
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "bundle/airline"]
-	path = bundle/airline
+	path = vim/bundle/airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "bundle/vim-colorschemes"]
-	path = bundle/colorschemes
+	path = vim/bundle/colorschemes
 	url = https://github.com/flazz/vim-colorschemes
 [submodule "bundle/vim-scala"]
-	path = bundle/vim-scala
+	path = vim/bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala
 [submodule "bundle/vimwiki"]
-	path = bundle/vimwiki
+	path = vim/bundle/vimwiki
   url = https://github.com/vimwiki/vimwiki.git
 [submodule "bundle/vim-graphql"]
-	path = bundle/vim-graphql
+	path = vim/bundle/vim-graphql
 	url = https://github.com/jparise/vim-graphql
 [submodule "bundle/typescript-vim"]
-	path = bundle/typescript-vim
+	path = vim/bundle/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim
 [submodule "bundle/vim-elixir"]
-	path = bundle/vim-elixir
+	path = vim/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git

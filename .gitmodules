@@ -25,3 +25,6 @@
 [submodule "bundle/vim-elixir"]
 	path = vim/.vim/bundle/vim-elixir
 	url = https://github.com/elixir-lang/vim-elixir.git
+[submodule "vim/.vim/bundle/alchemist"]
+	path = vim/.vim/bundle/alchemist
+	url = https://github.com/slashmili/alchemist.vim

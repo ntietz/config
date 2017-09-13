@@ -58,3 +58,6 @@ export TERM=xterm-256color
 
 export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 
+source $HOME/.asdf/asdf.sh
+source $HOME/.asdf/completions/asdf.bash
+

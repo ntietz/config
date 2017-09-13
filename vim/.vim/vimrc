@@ -41,8 +41,8 @@ let java_allow_cpp_keywords=1
 
 set ruler
 set number
-set relativenumber
 set backspace=indent,eol,start
+set incsearch
 set hlsearch
 
 set splitright
@@ -65,15 +65,7 @@ let NERDTreeIgnore = ['\.pyc$']
 set t_Co=256
 
 colorscheme 256-grayvim
-"colorscheme gentooish
-
-"let mapleader = "'"
-"set pastetoggle=<Leader>p
-"map <Leader>w :set wrap<CR>
-"map <Leader>e :set nowrap<CR>
-
-let g:vimwiki_list = [ {'path': '~/vimwiki'}, {'path': '~/Code/vimwiki-client-notes'} ]
-
+"
 " fixes webpack file watchers
 set backupcopy=yes
 

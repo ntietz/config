@@ -6,6 +6,10 @@ config defaultToCurrentScreen true
 config nudgePercentOf screenSize
 config resizePercentOf screenSize
 
+# set screens
+alias macbook 1680x1050
+alias monitor 3008x1692
+
 # variables
 alias width screenSizeX
 alias height screenSizeY
@@ -32,6 +36,13 @@ alias centerOneThird move ${originX} + ${oneThirdWidth};${originY} ${oneThirdWid
 alias rightTwoThirds move (${originX}+${oneThirdWidth});${originY} ${twoThirdsWidth};${height}
 alias rightOneThird move (${originX}+${twoThirdsWidth});${originY} ${oneThirdWidth};${height}
 
+# static positions
+alias macbookFull ${full} ${macbook}
+
+alias monitorFull ${full} ${monitor}
+alias monitorLeft ${leftHalf} ${monitor}
+alias monitorRight ${rightHalf} ${monitor}
+
 # keybinding alias
 alias movetrigger cmd,alt
 alias extramovetrigger shift,cmd,alt
@@ -54,6 +65,10 @@ bind right:${extramovetrigger} ${rightOneThird}
 bind up:${extramovetrigger} ${leftTwoThirds}
 bind down:${extramovetrigger} ${rightTwoThirds}
 
+# move to other monitors
+bind left:shift,ctrl,cmd throw 0 resize
+bind right:shift,ctrl,cmd throw 1 resize
+
 # laptop layout for coding
 layout laptop-coding 'iTerm2':REPEAT ${full}
 layout laptop-coding 'Google Chrome':REPEAT ${full}
@@ -64,7 +79,25 @@ layout laptop-code-review 'iTerm2':REPEAT ${rightHalf}
 layout laptop-code-review 'Google Chrome':REPEAT ${leftHalf}
 layout laptop-coding 'Slack':REPEAT ${full}
 
+# in-the-office layout for coding
+layout office-coding 'iTerm2':REPEAT ${monitorFull}
+layout office-coding 'Google Chrome':REPEAT ${monitorFull}
+layout office-coding 'Slack':REPEAT ${macbookFull}
+
+# in-the-office layout for code review
+layout office-code-review 'iTerm2':REPEAT ${monitorRight}
+layout office-code-review 'Google Chrome':REPEAT ${monitorLeft}
+layout office-code-review 'Slack':REPEAT ${macbookFull}
+
+# default layouts
+default laptop-coding resolutions:${macbook}
+default office-coding resolutions:${macbook},${monitor}
+
 # bind layouts to keys
-bind 1:${movetrigger} layout laptop-coding
-bind 2:${movetrigger} layout laptop-code-review
+bind 1:${movetrigger} layout office-coding
+bind 2:${movetrigger} layout office-code-review
+bind 3:${movetrigger} layout laptop-coding
+bind 4:${movetrigger} layout laptop-code-review
+
+
 

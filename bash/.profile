@@ -63,5 +63,8 @@ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
 
+source $HOME/.install/google-cloud-sdk/completion.bash.inc
+source $HOME/.install/google-cloud-sdk/path.bash.inc
+
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 

@@ -81,7 +81,7 @@ layout laptop-coding 'Slack':REPEAT ${full}
 
 # in-the-office layout for coding
 layout office-coding 'iTerm2':REPEAT ${monitorFull}
-layout office-coding 'Google Chrome':REPEAT ${monitorFull}
+layout office-coding 'Google Chrome':REPEAT ${macbookFull}
 layout office-coding 'Slack':REPEAT ${macbookFull}
 
 # in-the-office layout for code review

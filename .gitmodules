@@ -28,3 +28,6 @@
 [submodule "vim/.vim/bundle/alchemist"]
 	path = vim/.vim/bundle/alchemist
 	url = https://github.com/slashmili/alchemist.vim
+[submodule "vim/.vim/bundle/vim-css-color"]
+	path = vim/.vim/bundle/vim-css-color
+	url = https://github.com/ap/vim-css-color

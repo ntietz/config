@@ -31,3 +31,6 @@
 [submodule "vim/.vim/bundle/vim-css-color"]
 	path = vim/.vim/bundle/vim-css-color
 	url = https://github.com/ap/vim-css-color
+[submodule "vim/.vim/bundle/vim-terraform"]
+	path = vim/.vim/bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git

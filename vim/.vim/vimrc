@@ -81,3 +81,6 @@ au FileChangedShell * checktime
 au CursorHold * checktime
 au CursorHoldI * checktime
 
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+

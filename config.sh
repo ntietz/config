@@ -3,6 +3,7 @@
 stow -t ~ bash
 stow -t ~ screen
 stow -t ~ vim
+stow -t ~ slate
 
 #rm -f .screenrc
 #ln -s ~/Code/config/screenrc .screenrc

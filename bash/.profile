@@ -33,7 +33,9 @@ restart_network_manager() {
 set_prompt
 
 # makes ls print pretty
-alias ls="ls --color=auto"
+#alias ls="ls --color=auto"
+# TODO: make this work on both platforms
+alias ls="ls -G"
 
 # default editor
 export EDITOR=vim
@@ -60,4 +62,9 @@ export JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
 
 source $HOME/.asdf/asdf.sh
 source $HOME/.asdf/completions/asdf.bash
+
+source $HOME/.install/google-cloud-sdk/completion.bash.inc
+source $HOME/.install/google-cloud-sdk/path.bash.inc
+
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 

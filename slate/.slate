@@ -1,0 +1,103 @@
+# This is my modified .slate file.
+# It is based off the default (https://raw.githubusercontent.com/jigish/slate/master/Slate/default.slate)
+# as well as pdilyard's (https://github.com/pdilyard/dotfiles/blob/master/.slate).
+
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+
+# set screens
+alias macbook 1680x1050
+alias monitor 3008x1692
+
+# variables
+alias width screenSizeX
+alias height screenSizeY
+alias originX screenOriginX
+alias originY screenOriginY
+
+alias oneThirdWidth ${width}/3
+alias oneHalfWidth ${width}/2
+alias twoThirdsWidth (${oneThirdWidth}*2)
+alias oneHalfHeight ${height}/2
+
+# positions
+alias full move ${originX};${originY} ${width};${height}
+
+alias leftHalf move ${originX};${originY} ${oneHalfWidth};${height}
+alias rightHalf move (${originX}+${oneHalfWidth});${originY} ${oneHalfWidth};${height}
+
+alias topHalf move ${originX};${originY} ${width};${oneHalfHeight}
+alias bottomHalf move ${originX};${originY}+${oneHalfHeight} ${width};${oneHalfHeight}
+
+alias leftOneThird move ${originX};${originY} ${oneThirdWidth};${height}
+alias leftTwoThirds move ${originX};${originY} ${twoThirdsWidth};${height}
+alias centerOneThird move ${originX} + ${oneThirdWidth};${originY} ${oneThirdWidth};${height}
+alias rightTwoThirds move (${originX}+${oneThirdWidth});${originY} ${twoThirdsWidth};${height}
+alias rightOneThird move (${originX}+${twoThirdsWidth});${originY} ${oneThirdWidth};${height}
+
+# static positions
+alias macbookFull ${full} ${macbook}
+
+alias monitorFull ${full} ${monitor}
+alias monitorLeft ${leftHalf} ${monitor}
+alias monitorRight ${rightHalf} ${monitor}
+
+# keybinding alias
+alias movetrigger cmd,alt
+alias extramovetrigger shift,cmd,alt
+alias apptrigger ctrl,shift
+
+# quick switching to commonly used apps
+bind space:${apptrigger} focus 'iTerm2'
+bind t:${apptrigger} focus 'iTerm2'
+bind c:${apptrigger} focus 'Google Chrome'
+bind s:${apptrigger} focus 'Slack'
+
+# movement keys
+bind f:${movetrigger} ${full}
+bind left:${movetrigger} ${leftHalf}
+bind right:${movetrigger} ${rightHalf}
+bind up:${movetrigger} ${topHalf}
+bind down:${movetrigger} ${bottomHalf}
+bind left:${extramovetrigger} ${leftOneThird}
+bind right:${extramovetrigger} ${rightOneThird}
+bind up:${extramovetrigger} ${leftTwoThirds}
+bind down:${extramovetrigger} ${rightTwoThirds}
+
+# move to other monitors
+bind left:shift,ctrl,cmd throw 0 resize
+bind right:shift,ctrl,cmd throw 1 resize
+
+# laptop layout for coding
+layout laptop-coding 'iTerm2':REPEAT ${full}
+layout laptop-coding 'Google Chrome':REPEAT ${full}
+layout laptop-coding 'Slack':REPEAT ${full}
+
+# laptop layout for code review
+layout laptop-code-review 'iTerm2':REPEAT ${rightHalf}
+layout laptop-code-review 'Google Chrome':REPEAT ${leftHalf}
+layout laptop-coding 'Slack':REPEAT ${full}
+
+# in-the-office layout for coding
+layout office-coding 'iTerm2':REPEAT ${monitorFull}
+layout office-coding 'Google Chrome':REPEAT ${macbookFull}
+layout office-coding 'Slack':REPEAT ${macbookFull}
+
+# in-the-office layout for code review
+layout office-code-review 'iTerm2':REPEAT ${monitorRight}
+layout office-code-review 'Google Chrome':REPEAT ${monitorLeft}
+layout office-code-review 'Slack':REPEAT ${macbookFull}
+
+# default layouts
+default laptop-coding resolutions:${macbook}
+default office-coding resolutions:${macbook},${monitor}
+
+# bind layouts to keys
+bind 1:${movetrigger} layout office-coding
+bind 2:${movetrigger} layout office-code-review
+bind 3:${movetrigger} layout laptop-coding
+bind 4:${movetrigger} layout laptop-code-review
+
+
+

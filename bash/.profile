@@ -66,5 +66,7 @@ source $HOME/.asdf/completions/asdf.bash
 source $HOME/.install/google-cloud-sdk/completion.bash.inc
 source $HOME/.install/google-cloud-sdk/path.bash.inc
 
+alias iex="iex --erl \"-kernel shell_history enabled\""
+
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 

@@ -4,6 +4,7 @@ stow -t ~ bash
 stow -t ~ screen
 stow -t ~ vim
 stow -t ~ slate
+stow -t ~ iex
 
 #rm -f .screenrc
 #ln -s ~/Code/config/screenrc .screenrc

@@ -3,6 +3,10 @@
 
 export SHELL=/bin/bash
 
+update_terminal_cwd() {
+    true;
+}
+
 set_prompt() {
     local BLUE="\[\e[0;34m\]"
     local DARK_BLUE="\[\e[1;34m\]"

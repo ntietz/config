@@ -34,7 +34,6 @@ SetupTabbing
 " makes LaTeX use spell checking, word wrapping
 autocmd FileType tex set wrap spell
 autocmd FileType make set noexpandtab
-autocmd FileType python SetupTabbing
 autocmd FileType markdown set wrap
 
 let java_allow_cpp_keywords=1

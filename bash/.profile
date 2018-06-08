@@ -41,6 +41,8 @@ set_prompt
 # TODO: make this work on both platforms
 alias ls="ls -G"
 
+alias notes="vim ~/notes.md"
+
 # default editor
 export EDITOR=vim
 
@@ -71,6 +73,9 @@ source $HOME/.install/google-cloud-sdk/completion.bash.inc
 source $HOME/.install/google-cloud-sdk/path.bash.inc
 
 alias iex="iex --erl \"-kernel shell_history enabled\""
+
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 

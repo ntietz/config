@@ -74,6 +74,8 @@ set backupcopy=yes
 set dir=$HOME/.vim/tmp/swap
 if !isdirectory(&dir) | call mkdir(&dir, 'p', 0700) | endif
 
+let g:vimwiki_list = [ {'path': '~/Code/ntietz/vimwiki'} ]
+
 set autoread
 set updatetime=100
 au FileChangedShell * checktime

@@ -11,12 +11,13 @@ configure_completions
 export EDITOR=vim
 
 # set history
-export HISTSIZE=10000 # very large history
+export HISTSIZE=1000 # very large history
 export HISTFILESIZE=10000 # very large history
 export HISTCONTROL=ignoreboth:erasedups # ignore duplicate history entries
 shopt -s histappend # append to the history when the shell exits (instead of overwriting)
 # save and reload history each time a command is run, to share history between shells
-export PROMPT_COMMAND="history -a; history -c; history -r"
+
+alias ssh-proxy="ssh -D 8080 galaxy"
 
 # disable messaging
 if `tty -s`; then

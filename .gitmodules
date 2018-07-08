@@ -40,3 +40,6 @@
 [submodule "vim/.vim/bundle/vim-gitgutter"]
 	path = vim/.vim/bundle/vim-gitgutter
 	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/.vim/bundle/bats"]
+	path = vim/.vim/bundle/bats
+	url = https://github.com/vim-scripts/bats.vim

@@ -28,9 +28,12 @@ export PATH=$PATH:~/.bin
 export TERM=xterm-256color
 
 # Installed with https://github.com/pyenv/pyenv-installer
-export PATH="/home/nicholas/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+if [ -x "$(command -v pyenv)" ]
+then
+  export PATH="/home/nicholas/.pyenv/bin:$PATH"
+  eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
+fi
 
 if [ -f /usr/local/etc/bash_completion ]
 then

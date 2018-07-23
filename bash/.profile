@@ -27,8 +27,10 @@ export PATH=$PATH:~/.bin
 export TERM=xterm-256color
 
 # Installed with https://github.com/pyenv/pyenv-installer
-eval "$(pyenv init -)"
-#eval "$(pyenv virtualenv-init -)"
+if [ -x "$(command -v pyenv)" ]
+then
+  eval "$(pyenv init -)"
+fi
 
 source $HOME/.install/google-cloud-sdk/completion.bash.inc
 source $HOME/.install/google-cloud-sdk/path.bash.inc

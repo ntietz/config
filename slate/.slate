@@ -32,7 +32,7 @@ alias bottomHalf move ${originX};${originY}+${oneHalfHeight} ${width};${oneHalfH
 
 alias leftOneThird move ${originX};${originY} ${oneThirdWidth};${height}
 alias leftTwoThirds move ${originX};${originY} ${twoThirdsWidth};${height}
-alias centerOneThird move ${originX} + ${oneThirdWidth};${originY} ${oneThirdWidth};${height}
+alias centerOneThird move (${originX}+${oneThirdWidth});${originY} ${oneThirdWidth};${height}
 alias rightTwoThirds move (${originX}+${oneThirdWidth});${originY} ${twoThirdsWidth};${height}
 alias rightOneThird move (${originX}+${twoThirdsWidth});${originY} ${oneThirdWidth};${height}
 
@@ -62,6 +62,7 @@ bind up:${movetrigger} ${topHalf}
 bind down:${movetrigger} ${bottomHalf}
 bind left:${extramovetrigger} ${leftOneThird}
 bind right:${extramovetrigger} ${rightOneThird}
+bind m:${extramovetrigger} ${centerOneThird}
 bind up:${extramovetrigger} ${leftTwoThirds}
 bind down:${extramovetrigger} ${rightTwoThirds}
 

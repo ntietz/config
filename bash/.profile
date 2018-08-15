@@ -29,11 +29,16 @@ export TERM=xterm-256color
 # Installed with https://github.com/pyenv/pyenv-installer
 if [ -x "$(command -v pyenv)" ]
 then
+  export PATH="/home/nicholas/.pyenv/bin:$PATH"
   eval "$(pyenv init -)"
+  eval "$(pyenv virtualenv-init -)"
 fi
 
-source $HOME/.install/google-cloud-sdk/completion.bash.inc
-source $HOME/.install/google-cloud-sdk/path.bash.inc
+if [ -x "$(command -v gcloud)" ]
+then
+  source $HOME/.install/google-cloud-sdk/completion.bash.inc
+  source $HOME/.install/google-cloud-sdk/path.bash.inc
+fi
 
 alias iex="iex --erl \"-kernel shell_history enabled\""
 

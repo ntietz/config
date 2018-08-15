@@ -31,10 +31,9 @@ if [ -x "$(command -v pyenv)" ]
 then
   export PATH="/home/nicholas/.pyenv/bin:$PATH"
   eval "$(pyenv init -)"
-  eval "$(pyenv virtualenv-init -)"
 fi
 
-if [ -x "$(command -v gcloud)" ]
+if [ -x "$(command -v gcloud)" ] && [ -f "$HOME/.install/google-cloud-sdk" ]
 then
   source $HOME/.install/google-cloud-sdk/completion.bash.inc
   source $HOME/.install/google-cloud-sdk/path.bash.inc

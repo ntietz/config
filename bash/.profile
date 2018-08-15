@@ -7,6 +7,8 @@ set_prompt
 configure_ls
 configure_completions
 
+alias notes="vim ~/notes.md"
+
 # default editor
 export EDITOR=vim
 
@@ -15,9 +17,6 @@ export HISTSIZE=1000 # very large history
 export HISTFILESIZE=10000 # very large history
 export HISTCONTROL=ignoreboth:erasedups # ignore duplicate history entries
 shopt -s histappend # append to the history when the shell exits (instead of overwriting)
-# save and reload history each time a command is run, to share history between shells
-
-alias ssh-proxy="ssh -D 8080 galaxy"
 
 # disable messaging
 if `tty -s`; then
@@ -34,6 +33,14 @@ then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
+
+if [ -x "$(command -v gcloud)" ]
+then
+  source $HOME/.install/google-cloud-sdk/completion.bash.inc
+  source $HOME/.install/google-cloud-sdk/path.bash.inc
+fi
+
+alias iex="iex --erl \"-kernel shell_history enabled\""
 
 if [ -f /usr/local/etc/bash_completion ]
 then

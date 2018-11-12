@@ -23,13 +23,12 @@ if `tty -s`; then
     mesg n
 fi
 
-export PATH=$PATH:~/.bin
+export PATH="$HOME/.local/bin:$HOME/.bin:$PATH"
 export TERM=xterm-256color
 
-# Installed with https://github.com/pyenv/pyenv-installer
-if [ -x "$(command -v pyenv)" ]
+if [ -d "$HOME/.pyenv" ]
 then
-  export PATH="/home/nicholas/.pyenv/bin:$PATH"
+  export PATH="$HOME/.pyenv/bin:$PATH"
   eval "$(pyenv init -)"
 fi
 
@@ -37,6 +36,16 @@ if [ -x "$(command -v gcloud)" ] && [ -f "$HOME/.install/google-cloud-sdk" ]
 then
   source $HOME/.install/google-cloud-sdk/completion.bash.inc
   source $HOME/.install/google-cloud-sdk/path.bash.inc
+fi
+
+if [ -x "$(command -v yarn)" ] && [ -d "$HOME/.yarn/bin" ]
+then
+  export PATH="/home/nicholas/.yarn/bin:$PATH"
+fi
+
+if [ -d "$HOME/.asdf" ]
+then
+  . $HOME/.asdf/asdf.sh
 fi
 
 alias iex="iex --erl \"-kernel shell_history enabled\""

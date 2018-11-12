@@ -32,7 +32,7 @@ alias bottomHalf move ${originX};${originY}+${oneHalfHeight} ${width};${oneHalfH
 
 alias leftOneThird move ${originX};${originY} ${oneThirdWidth};${height}
 alias leftTwoThirds move ${originX};${originY} ${twoThirdsWidth};${height}
-alias centerOneThird move ${originX} + ${oneThirdWidth};${originY} ${oneThirdWidth};${height}
+alias centerOneThird move (${originX}+${oneThirdWidth});${originY} ${oneThirdWidth};${height}
 alias rightTwoThirds move (${originX}+${oneThirdWidth});${originY} ${twoThirdsWidth};${height}
 alias rightOneThird move (${originX}+${twoThirdsWidth});${originY} ${oneThirdWidth};${height}
 
@@ -49,8 +49,8 @@ alias extramovetrigger shift,cmd,alt
 alias apptrigger ctrl,shift
 
 # quick switching to commonly used apps
-bind space:${apptrigger} focus 'iTerm2'
-bind t:${apptrigger} focus 'iTerm2'
+bind space:${apptrigger} focus 'Terminal'
+bind t:${apptrigger} focus 'Terminal'
 bind c:${apptrigger} focus 'Google Chrome'
 bind s:${apptrigger} focus 'Slack'
 
@@ -62,6 +62,7 @@ bind up:${movetrigger} ${topHalf}
 bind down:${movetrigger} ${bottomHalf}
 bind left:${extramovetrigger} ${leftOneThird}
 bind right:${extramovetrigger} ${rightOneThird}
+bind m:${extramovetrigger} ${centerOneThird}
 bind up:${extramovetrigger} ${leftTwoThirds}
 bind down:${extramovetrigger} ${rightTwoThirds}
 
@@ -70,22 +71,22 @@ bind left:shift,ctrl,cmd throw 0 resize
 bind right:shift,ctrl,cmd throw 1 resize
 
 # laptop layout for coding
-layout laptop-coding 'iTerm2':REPEAT ${full}
+layout laptop-coding 'Terminal':REPEAT ${full}
 layout laptop-coding 'Google Chrome':REPEAT ${full}
 layout laptop-coding 'Slack':REPEAT ${full}
 
 # laptop layout for code review
-layout laptop-code-review 'iTerm2':REPEAT ${rightHalf}
+layout laptop-code-review 'Terminal':REPEAT ${rightHalf}
 layout laptop-code-review 'Google Chrome':REPEAT ${leftHalf}
 layout laptop-coding 'Slack':REPEAT ${full}
 
 # in-the-office layout for coding
-layout office-coding 'iTerm2':REPEAT ${monitorFull}
+layout office-coding 'Terminal':REPEAT ${monitorFull}
 layout office-coding 'Google Chrome':REPEAT ${macbookFull}
 layout office-coding 'Slack':REPEAT ${macbookFull}
 
 # in-the-office layout for code review
-layout office-code-review 'iTerm2':REPEAT ${monitorRight}
+layout office-code-review 'Terminal':REPEAT ${monitorRight}
 layout office-code-review 'Google Chrome':REPEAT ${monitorLeft}
 layout office-code-review 'Slack':REPEAT ${macbookFull}
 

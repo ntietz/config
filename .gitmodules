@@ -46,3 +46,6 @@
 [submodule "vim/.vim/bundle/bats"]
 	path = vim/.vim/bundle/bats
 	url = https://github.com/vim-scripts/bats.vim
+[submodule "nvim/.config/nvim/plug"]
+	path = nvim/.config/nvim/plug
+	url = https://github.com/junegunn/vim-plug

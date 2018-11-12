@@ -24,7 +24,7 @@ if `tty -s`; then
     mesg n
 fi
 
-export PATH=$PATH:~/.bin
+export PATH=$PATH:~/.bin:~/.local/bin
 export TERM=xterm-256color
 
 # Installed with https://github.com/pyenv/pyenv-installer

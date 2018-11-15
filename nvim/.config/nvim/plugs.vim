@@ -7,6 +7,10 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive' " Git integration
 Plug 'airblade/vim-gitgutter' " Shows a diff in the gutter
 
+" TODO: what is this section called?
+" TODO: consider switching to powerline
+Plug 'vim-airline/vim-airline' " Display more contextual information
+
 " [submodule "bundle/airline"]
 " 	path = vim/.vim/bundle/airline
 " 	url = https://github.com/vim-airline/vim-airline

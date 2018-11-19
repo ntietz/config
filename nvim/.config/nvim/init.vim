@@ -22,7 +22,8 @@ set autoindent
 set smartindent
 set smarttab
 
-"set splitright
-"set splitbelow
+set splitright
+set splitbelow
 
+let g:vimwiki_list = [ {'path': '~/Code/ntietz/vimwiki'} ]
 

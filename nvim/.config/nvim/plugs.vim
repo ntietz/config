@@ -14,6 +14,9 @@ Plug 'vim-airline/vim-airline' " Display more contextual information
 " syntax highlighting
 Plug 'sheerun/vim-polyglot' " Automatic syntax highlighting
 
+" vimwiki
+Plug 'vimwiki/vimwiki'
+
 " [submodule "bundle/airline"]
 " 	path = vim/.vim/bundle/airline
 " 	url = https://github.com/vim-airline/vim-airline

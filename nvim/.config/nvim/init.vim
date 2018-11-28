@@ -27,3 +27,7 @@ set splitbelow
 
 let g:vimwiki_list = [ {'path': '~/Code/ntietz/vimwiki'} ]
 
+set spell
+
+colorscheme torte
+

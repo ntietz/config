@@ -17,15 +17,6 @@ Plug 'sheerun/vim-polyglot' " Automatic syntax highlighting
 " vimwiki
 Plug 'vimwiki/vimwiki'
 
-" [submodule "bundle/airline"]
-" 	path = vim/.vim/bundle/airline
-" 	url = https://github.com/vim-airline/vim-airline
-" [submodule "bundle/vim-colorschemes"]
-" 	path = vim/.vim/bundle/colorschemes
-" 	url = https://github.com/flazz/vim-colorschemes
-" [submodule "bundle/vimwiki"]
-" 	path = vim/.vim/bundle/vimwiki
-"   url = https://github.com/vimwiki/vimwiki.git
 " [submodule "bundle/vim-graphql"]
 " 	path = vim/.vim/bundle/vim-graphql
 " 	url = https://github.com/jparise/vim-graphql
@@ -38,9 +29,6 @@ Plug 'vimwiki/vimwiki'
 " [submodule "vim/.vim/bundle/vim-css-color"]
 " 	path = vim/.vim/bundle/vim-css-color
 " 	url = https://github.com/ap/vim-css-color
-" [submodule "vim/.vim/bundle/vim-terraform"]
-" 	path = vim/.vim/bundle/vim-terraform
-" 	url = https://github.com/hashivim/vim-terraform.git
 " [submodule "vim/.vim/bundle/ctrlp"]
 " 	path = vim/.vim/bundle/ctrlp
 " 	url = https://github.com/ctrlpvim/ctrlp.vim

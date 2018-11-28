@@ -22,12 +22,14 @@ set autoindent
 set smartindent
 set smarttab
 
-set splitright
-set splitbelow
+" TODO: do I want this?
+"set splitright
+"set splitbelow
 
 let g:vimwiki_list = [ {'path': '~/Code/ntietz/vimwiki'} ]
 
 set spell
 
-colorscheme torte
+colorscheme gruvbox
+set background=dark
 

@@ -7,6 +7,7 @@ set_prompt
 configure_ls
 configure_completions
 
+alias vim="nvim"
 alias notes="vim ~/notes.md"
 
 # default editor

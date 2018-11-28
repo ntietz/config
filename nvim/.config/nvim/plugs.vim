@@ -17,6 +17,9 @@ Plug 'sheerun/vim-polyglot' " Automatic syntax highlighting
 " vimwiki
 Plug 'vimwiki/vimwiki'
 
+" add a ton of colorschemes to pick from
+Plug 'flazz/vim-colorschemes'
+
 " [submodule "bundle/vim-graphql"]
 " 	path = vim/.vim/bundle/vim-graphql
 " 	url = https://github.com/jparise/vim-graphql

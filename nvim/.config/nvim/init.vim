@@ -12,6 +12,7 @@ set mouse=a
 set nu
 set nowrap
 set linebreak " if we do wrap, do it at word boundaries
+autocmd FileType markdown set wrap
 
 " TODO: do I want these all?
 set tabstop=2

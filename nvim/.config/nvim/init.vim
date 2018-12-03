@@ -11,6 +11,7 @@ set mouse=a
 
 set nu
 set nowrap
+set linebreak " if we do wrap, do it at word boundaries
 
 " TODO: do I want these all?
 set tabstop=2

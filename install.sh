@@ -1,7 +1,7 @@
 #!/bin/bash
 
 function install_utilities() {
-  sudo apt install vim stow tmux htop
+  sudo apt install vim neovim stow tmux htop
 }
 
 function install_docker() {

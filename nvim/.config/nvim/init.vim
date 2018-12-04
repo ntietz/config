@@ -9,12 +9,17 @@ let g:airline#extensions#tabline#enabled = 1
 
 set mouse=a
 
+" Keep context visible
+set scrolloff=2
+set sidescrolloff=0
+
 set nu
 set relativenumber
 
 set nowrap
 set linebreak " if we do wrap, do it at word boundaries
 autocmd FileType markdown set wrap
+autocmd FileType tex set wrap
 
 " TODO: do I want these all?
 set tabstop=2
@@ -36,4 +41,12 @@ set spell
 
 colorscheme gruvbox
 set background=dark
+
+set autoread
+set updatetime=100
+au FileChangedShell * checktime
+au CursorHold * checktime
+au CursorHoldI * checktime
+
+set wildignore +=*/tmp/*,*.pyc,*/__pycache__/*
 

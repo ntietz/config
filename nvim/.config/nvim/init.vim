@@ -10,6 +10,8 @@ let g:airline#extensions#tabline#enabled = 1
 set mouse=a
 
 set nu
+set relativenumber
+
 set nowrap
 set linebreak " if we do wrap, do it at word boundaries
 autocmd FileType markdown set wrap

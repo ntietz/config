@@ -7,33 +7,32 @@ map <C-n> :NERDTreeToggle<CR>
 " Display buffers in the tab line
 let g:airline#extensions#tabline#enabled = 1
 
-set mouse=a
+" Disable mouse input
+set mouse=
 
 " Keep context visible
 set scrolloff=2
 set sidescrolloff=0
 
+" Display our current line number and the offset of other lines
 set nu
 set relativenumber
 
+" Setup good wrapping so we don't wrap for most files and when we do, it's
+" pretty.
 set nowrap
-set linebreak " if we do wrap, do it at word boundaries
+set linebreak " wraps at word boundaries
 autocmd FileType markdown set wrap
 autocmd FileType tex set wrap
 
-" TODO: do I want these all?
+" Set tabbing to depth 2 and always use spaces.
 set tabstop=2
-set expandtab
-set shiftwidth=2
 set softtabstop=2
-set sw=2
+set shiftwidth=2
+set expandtab
+set smarttab
 set autoindent
 set smartindent
-set smarttab
-
-" TODO: do I want this?
-"set splitright
-"set splitbelow
 
 let g:vimwiki_list = [ {'path': '~/Code/ntietz/vimwiki'} ]
 
@@ -50,3 +49,4 @@ au CursorHoldI * checktime
 
 set wildignore +=*/tmp/*,*.pyc,*/__pycache__/*
 
+" TODO: add auto whitespace stripping

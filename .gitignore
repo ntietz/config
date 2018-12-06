@@ -1,3 +1,4 @@
 # we want to ignore swap files...
 *.swp
-
+Session.vim
+.netrwhist

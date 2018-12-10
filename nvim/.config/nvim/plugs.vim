@@ -21,17 +21,18 @@ Plug 'vimwiki/vimwiki'
 " add a ton of colorschemes to pick from
 Plug 'flazz/vim-colorschemes'
 
+" Better session handling
 Plug 'tpope/vim-obsession'
 
-" [submodule "vim/.vim/bundle/ctrlp"]
-" 	path = vim/.vim/bundle/ctrlp
-" 	url = https://github.com/ctrlpvim/ctrlp.vim
-"
+" Use common config to setup tab depth
+Plug 'editorconfig/editorconfig-vim'
+
+" Find files in a fuzzy way
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } " fzf binary
+Plug 'junegunn/fzf.vim' " fzf vim plugin
 
 
-" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } " fzf binary
-" Plug 'junegunn/fzf.vim' " fzf vim plugin
 " Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'commit': '865747efe41ea1d923758617d71e8e5b59da292e' } " Auto-completion
-" Plug 'tpope/vim-obsession' " Save and restore sessions
+
 call plug#end()
 

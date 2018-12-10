@@ -26,9 +26,9 @@ autocmd FileType markdown set wrap
 autocmd FileType tex set wrap
 
 " Set tabbing to depth 2 and always use spaces.
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
 set expandtab
 set smarttab
 set autoindent
@@ -49,4 +49,6 @@ au CursorHoldI * checktime
 
 set wildignore +=*/tmp/*,*.pyc,*/__pycache__/*
 
-" TODO: add auto whitespace stripping
+nmap <leader>b :Buffers<CR>
+nmap <leader>f :Files<CR>
+

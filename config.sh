@@ -5,4 +5,5 @@ stow -t ~ vim
 stow -t ~ iex
 stow -t ~ tmux
 stow -t ~ nvim
+stow -t ~ ctags
 

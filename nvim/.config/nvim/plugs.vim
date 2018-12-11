@@ -31,8 +31,9 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' } " fzf binary
 Plug 'junegunn/fzf.vim' " fzf vim plugin
 
-
-" Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins', 'commit': '865747efe41ea1d923758617d71e8e5b59da292e' } " Auto-completion
+" Auto-completion
+" Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+" Plug 'zchee/deoplete-jedi'
 
 call plug#end()
 

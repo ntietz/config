@@ -103,6 +103,17 @@ function setup_pynvim() {
     pip3 install --user --upgrade jedi
 }
 
+function install_ctags() {
+    mkdir -p ~/.install
+    cd ~/.install
+    git clone https://github.com/universal-ctags/ctags.git
+    cd ctags
+    ./autogen.sh
+    ./configure
+    make
+    sudo make install
+}
+
 #install_utilities # TODO
 install_docker
 install_docker_compose
@@ -110,4 +121,5 @@ install_yarn
 install_asdf
 install_google_cloud_sdk
 install_pyenv
+install_ctags
 

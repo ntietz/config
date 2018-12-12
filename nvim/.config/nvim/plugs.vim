@@ -11,8 +11,9 @@ Plug 'airblade/vim-gitgutter' " Shows a diff in the gutter
 " TODO: consider switching to powerline
 Plug 'vim-airline/vim-airline' " Display more contextual information
 
-" syntax highlighting
-Plug 'sheerun/vim-polyglot' " Automatic syntax highlighting
+" language support
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'sheerun/vim-polyglot' " Automatic syntax highlighting for many languages
 
 " vimwiki
 Plug 'vimwiki/vimwiki'

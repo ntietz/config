@@ -52,11 +52,11 @@ set wildignore +=*/tmp/*,*.pyc,*/__pycache__/*
 nmap <leader>b :Buffers<CR>
 nmap <leader>f :Files<CR>
 
-let g:deoplete#enable_at_startup = 1
-let g:deoplete#disable_auto_complete = 1
-let g:deoplete#sources#jedi#show_docstring = 1
-inoremap <expr><C-n> deoplete#mappings#manual_complete()
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+" let g:deoplete#enable_at_startup = 1
+" let g:deoplete#disable_auto_complete = 1
+" let g:deoplete#sources#jedi#show_docstring = 1
+" inoremap <expr><C-n> deoplete#mappings#manual_complete()
+" inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " Turn off polyglot for go so they play nice
 if exists('g:loaded_polyglot')

@@ -36,5 +36,8 @@ Plug 'junegunn/fzf.vim' " fzf vim plugin
 Plug 'shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi'
 
+" Tags
+Plug 'majutsushi/tagbar'
+
 call plug#end()
 

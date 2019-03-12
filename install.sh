@@ -9,7 +9,7 @@ function install_docker() {
         echo "Docker is already installed; skipping..."
         return
     fi
-    
+
     # install the prereqs
     sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
@@ -30,25 +30,10 @@ function install_docker_compose() {
         echo "Docker Compose is already installed; skipping..."
         return
     fi
-    
+
     # this makes me uncomfortable
     sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
-}
-
-function install_yarn() {
-    if [ -x "$(command -v yarn)" ]; then
-        echo "yarn is already installed; skipping..."
-        return
-    fi
-    
-    # add the key
-    curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-    # add the repo and update apt
-    echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-    sudo apt update
-
-    sudo apt install yarn
 }
 
 function install_asdf() {
@@ -104,6 +89,7 @@ function setup_pynvim() {
 }
 
 function install_ctags() {
+    sudo apt install autoconf
     mkdir -p ~/.install
     cd ~/.install
     git clone https://github.com/universal-ctags/ctags.git
@@ -117,7 +103,6 @@ function install_ctags() {
 #install_utilities # TODO
 install_docker
 install_docker_compose
-install_yarn
 install_asdf
 install_google_cloud_sdk
 install_pyenv

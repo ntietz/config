@@ -10,7 +10,7 @@ configure_completions
 alias vim="nvim"
 alias notes="vim ~/notes.md"
 
-alias vw="cd ~/Code/ntietz/vimwiki; git pull; nvim -c \"VimwikiIndex\"; git add -A && git commit -am \"Auto-commit ($(date))\" && git push; cd -"
+alias vw="vimwiki"
 alias update_configs="cd ~/Code/ntietz/config; git pull; cd -; source ~/.profile"
 
 # default editor

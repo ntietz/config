@@ -52,4 +52,14 @@ configure_completions() {
   fi
 }
 
+vimwiki() {
+    cd ~/Code/ntietz/vimwiki
+    git pull
+    vim -c "VimwikiIndex"
+    git add -A
+    git commit -am "Auto-commit ($(date))"
+    git push
+    cd -
+}
+
 

@@ -9,7 +9,7 @@ function install_docker() {
         echo "Docker is already installed; skipping..."
         return
     fi
-    
+
     # install the prereqs
     sudo apt install apt-transport-https ca-certificates curl software-properties-common
 
@@ -30,7 +30,7 @@ function install_docker_compose() {
         echo "Docker Compose is already installed; skipping..."
         return
     fi
-    
+
     # this makes me uncomfortable
     sudo curl -L "https://github.com/docker/compose/releases/download/1.22.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
     sudo chmod +x /usr/local/bin/docker-compose
@@ -41,7 +41,7 @@ function install_yarn() {
         echo "yarn is already installed; skipping..."
         return
     fi
-    
+
     # add the key
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
     # add the repo and update apt

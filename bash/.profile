@@ -31,6 +31,7 @@ if [ -d "$HOME/.pyenv" ]
 then
   export PATH="$HOME/.pyenv/bin:$PATH"
   eval "$(pyenv init -)"
+  export PYENV_ROOT="$HOME/.pyenv"
 fi
 
 if [ -x "$(command -v gcloud)" ] && [ -f "$HOME/.install/google-cloud-sdk" ]

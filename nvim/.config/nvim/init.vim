@@ -34,7 +34,7 @@ set smarttab
 set autoindent
 set smartindent
 
-let g:vimwiki_list = [ {'path': '~/Code/ntietz/vimwiki'}, {'path': '~/Code/ntietz/vimwiki-remesh'} ]
+let g:vimwiki_list = [ {'path': '~/Code/ntietz/vimwiki'} ]
 
 set spell
 

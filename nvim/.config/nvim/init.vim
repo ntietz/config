@@ -14,9 +14,6 @@ set mouse=
 set scrolloff=2
 set sidescrolloff=0
 
-" Wrap to 100 characters
-set textwidth=100
-
 " Display our current line number and the offset of other lines
 set nu
 set relativenumber
@@ -27,6 +24,7 @@ set nowrap
 set linebreak " wraps at word boundaries
 autocmd FileType markdown set wrap
 autocmd FileType tex set wrap
+au BufRead,BufNewFile *.wiki set wrap
 
 " Set tabbing to depth 2 and always use spaces.
 set tabstop=4

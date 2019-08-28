@@ -60,3 +60,5 @@ then
     . /usr/local/etc/bash_completion
 fi
 
+#
+#export PATH="$HOME/.poetry/bin:$PATH"

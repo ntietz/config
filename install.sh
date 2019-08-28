@@ -100,6 +100,15 @@ function install_ctags() {
     sudo make install
 }
 
+function install_wtfutil() {
+    mkdir -p ~/.install
+    mkdir -p ~/.bin
+    cd ~/.install
+    wget -O wtfutil.tar.gz https://github.com/wtfutil/wtf/releases/download/v0.20.0/wtf_0.20.0_linux_amd64.tar.gz
+    tar xvfz wtfutil.tar.gz --one-top-level=wdir --strip-components=1
+    cp ./wdir/wtfutil ~/.bin/
+}
+
 #install_utilities # TODO
 install_docker
 install_docker_compose
@@ -107,4 +116,5 @@ install_asdf
 install_google_cloud_sdk
 install_pyenv
 install_ctags
+install_wtfutil
 

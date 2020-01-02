@@ -59,3 +59,5 @@ if [ -f /usr/local/etc/bash_completion ]
 then
     . /usr/local/etc/bash_completion
 fi
+
+export PATH="$HOME/.poetry/bin:$PATH"

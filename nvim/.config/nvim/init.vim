@@ -64,5 +64,6 @@ nmap <F8> :TagbarToggle<CR>
 " Turn off polyglot for go so they play nice
 if exists('g:loaded_polyglot')
     let g:polyglot_disabled = ['go']
+    let g:polyglot_disabled = ['rst']
 endif
 

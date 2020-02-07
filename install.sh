@@ -109,6 +109,12 @@ function install_wtfutil() {
     cp ./wdir/wtfutil ~/.bin/
 }
 
+function install_git_latest() {
+    sudo add-apt-repository ppa:git-core/ppa
+    sudo apt update
+    sudo apt install git
+}
+
 #install_utilities # TODO
 install_docker
 install_docker_compose
@@ -117,4 +123,5 @@ install_google_cloud_sdk
 install_pyenv
 install_ctags
 install_wtfutil
+install_git_latest
 

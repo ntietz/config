@@ -30,7 +30,7 @@ fi
 export PATH="$HOME/.local/bin:$HOME/.bin:$PATH"
 export TERM=xterm-256color
 
-if [ -d "$HOME/.pyenv" ]
+if [ -d "$HOME/.pyenv" ] && [ -z ${PYENV_SHELL+x} ]
 then
   export PATH="$HOME/.pyenv/bin:$PATH"
   eval "$(pyenv init -)"
@@ -60,5 +60,4 @@ then
     . /usr/local/etc/bash_completion
 fi
 
-#
-#export PATH="$HOME/.poetry/bin:$PATH"
+export PATH="$HOME/.poetry/bin:$PATH"

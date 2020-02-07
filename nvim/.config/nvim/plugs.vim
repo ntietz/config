@@ -13,6 +13,7 @@ Plug 'vim-airline/vim-airline' " Display more contextual information
 
 " language support
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'neovimhaskell/haskell-vim'
 Plug 'sheerun/vim-polyglot' " Automatic syntax highlighting for many languages
 
 " vimwiki

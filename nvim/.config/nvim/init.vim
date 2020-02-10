@@ -1,9 +1,10 @@
 source $HOME/.config/nvim/plug/plug.vim
 source $HOME/.config/nvim/plugs.vim
-source $HOME/.config/nvim/colors.vim
 
 syntax on
 filetype plugin indent on
+
+source $HOME/.config/nvim/colors.vim
 
 " Open NERDTree using a nice shortcut
 map <C-n> :NERDTreeToggle<CR>

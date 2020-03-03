@@ -1,6 +1,11 @@
 source $HOME/.config/nvim/plug/plug.vim
 source $HOME/.config/nvim/plugs.vim
 
+syntax on
+filetype plugin indent on
+
+source $HOME/.config/nvim/colors.vim
+
 " Open NERDTree using a nice shortcut
 map <C-n> :NERDTreeToggle<CR>
 
@@ -39,9 +44,6 @@ let g:vimwiki_list = [ {'path': '~/Code/ntietz/vimwiki'} ]
 
 set spell
 
-colorscheme gruvbox
-set background=dark
-
 set autoread
 set updatetime=100
 au FileChangedShell * checktime
@@ -64,5 +66,6 @@ nmap <F8> :TagbarToggle<CR>
 " Turn off polyglot for go so they play nice
 if exists('g:loaded_polyglot')
     let g:polyglot_disabled = ['go']
+    let g:polyglot_disabled = ['rst']
 endif
 

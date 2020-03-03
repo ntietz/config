@@ -17,8 +17,8 @@ alias update_configs="cd ~/Code/ntietz/config; git pull; cd -; source ~/.profile
 export EDITOR=vim
 
 # set history
-export HISTSIZE=1000 # very large history
-export HISTFILESIZE=10000 # very large history
+export HISTSIZE=1000000 # very large history
+export HISTFILESIZE=10000000 # very large history
 export HISTCONTROL=ignoreboth:erasedups # ignore duplicate history entries
 shopt -s histappend # append to the history when the shell exits (instead of overwriting)
 
@@ -59,3 +59,5 @@ if [ -f /usr/local/etc/bash_completion ]
 then
     . /usr/local/etc/bash_completion
 fi
+
+export PATH="$HOME/.poetry/bin:$PATH"

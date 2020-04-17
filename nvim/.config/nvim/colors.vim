@@ -1,4 +1,6 @@
 
+let g:airline_theme="papercolor"
+
 set termguicolors
 set background=light
 let g:gruvbox_italic=1

@@ -62,8 +62,13 @@ vimwiki() {
     cd -
 }
 
-getcolors() {
+set_term_colors() {
     bash -c  "$(wget -qO- https://git.io/vQgMr)"
+}
+
+
+print_available_colors() {
+    for i in {0..255} ; do     printf "\x1b[38;5;${i}mcolour${i}\n"; done
 }
 
 

@@ -10,6 +10,7 @@ Plug 'airblade/vim-gitgutter' " Shows a diff in the gutter
 " TODO: what is this section called?
 " TODO: consider switching to powerline
 Plug 'vim-airline/vim-airline' " Display more contextual information
+Plug 'vim-airline/vim-airline-themes'
 
 " language support
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }

@@ -69,3 +69,4 @@ if exists('g:loaded_polyglot')
     let g:polyglot_disabled = ['rst']
 endif
 
+set nowrap

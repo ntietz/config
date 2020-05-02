@@ -7,4 +7,5 @@ stow -t ~ tmux
 stow -t ~ nvim
 stow -t ~ ctags
 stow -t ~ editorconfig
+stow -t ~ git
 

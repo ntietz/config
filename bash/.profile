@@ -60,6 +60,7 @@ then
     . /usr/local/etc/bash_completion
 fi
 
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 
 # >>> conda initialize >>>

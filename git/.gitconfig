@@ -1,0 +1,10 @@
+[user]
+	name = Nicholas Tietz-Sokolsky
+	email = me@ntietz.com
+[push]
+	default = simple
+[core]
+	excludesfile = /home/nicholas/.gitignore_global
+	editor = nvim
+[alias]
+	praise = blame

@@ -8,3 +8,6 @@
 	editor = nvim
 [alias]
 	praise = blame
+[pull]
+	rebase = false
+	ff = only

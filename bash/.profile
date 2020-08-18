@@ -27,7 +27,7 @@ if `tty -s`; then
     mesg n
 fi
 
-export PATH="$HOME/.local/bin:$HOME/.bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/.bin:$HOME/go/bin:$PATH"
 export TERM=xterm-256color
 
 if [ -d "$HOME/.pyenv" ] && [ -z ${PYENV_SHELL+x} ]

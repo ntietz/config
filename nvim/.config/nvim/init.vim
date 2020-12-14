@@ -23,6 +23,11 @@ set sidescrolloff=0
 set nu
 set relativenumber
 
+" better searching
+set hlsearch
+set ignorecase
+set incsearch
+
 " Setup good wrapping so we don't wrap for most files and when we do, it's
 " pretty.
 set nowrap

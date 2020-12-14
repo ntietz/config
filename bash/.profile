@@ -1,6 +1,4 @@
 
-export SHELL=/bin/bash
-
 source ~/.bash_helpers.sh
 
 set_prompt
@@ -29,6 +27,7 @@ fi
 
 export PATH="$HOME/.local/bin:$HOME/.bin:$HOME/go/bin:$PATH"
 export TERM=xterm-256color
+#export TERM=xterm-256color
 
 if [ -d "$HOME/.pyenv" ] && [ -z ${PYENV_SHELL+x} ]
 then
@@ -48,11 +47,6 @@ then
   export PATH="/home/nicholas/.yarn/bin:$PATH"
 fi
 
-if [ -d "$HOME/.asdf" ]
-then
-  . $HOME/.asdf/asdf.sh
-fi
-
 alias iex="iex --erl \"-kernel shell_history enabled\""
 
 if [ -f /usr/local/etc/bash_completion ]
@@ -63,3 +57,4 @@ fi
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.poetry/bin:$PATH"
 
+export SHELL=/bin/bash

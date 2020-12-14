@@ -44,12 +44,6 @@ configure_completions() {
     source $HOME/.install/google-cloud-sdk/completion.bash.inc
     source $HOME/.install/google-cloud-sdk/path.bash.inc
   fi
-
-  # If asdf is installed, set up completion for it
-  if [[ -e "$HOME/.asdf" ]]; then
-    source $HOME/.asdf/asdf.sh
-    source $HOME/.asdf/completions/asdf.bash
-  fi
 }
 
 vimwiki() {

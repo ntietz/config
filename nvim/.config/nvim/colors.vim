@@ -2,7 +2,7 @@
 let g:airline_theme="papercolor"
 
 set termguicolors
-set background=light
+set background=dark
 let g:gruvbox_italic=1
 let g:gruvbox_italicize_strings=1
 colorscheme gruvbox
